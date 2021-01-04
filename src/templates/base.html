@@ -15,36 +15,40 @@
     </head>
     <body class="body">
         <div class="wrapper" >
-            <nav class= "sidebare" id="slidebarMenu">
-                <div class=" container sidebare-content" data-simplebar="init">
-                    <div class="row justify-content-center header-sidebare"> 
-                        <a class="side-bar-brand mt-3" href="#">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-dash-square-fill" viewBox="0 0 16 16">
-                                <path d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2zm2.5 7.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1 0-1z"/>
-                            </svg>
-                        </a>
-                    </div>                    
-                    <div class="row justify-content-center mt-5">
-                        <a class="nav-link text-white-50 " href="/">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-app" viewBox="0 0 16 16">
-                                <path d="M11 2a3 3 0 0 1 3 3v6a3 3 0 0 1-3 3H5a3 3 0 0 1-3-3V5a3 3 0 0 1 3-3h6zM5 1a4 4 0 0 0-4 4v6a4 4 0 0 0 4 4h6a4 4 0 0 0 4-4V5a4 4 0 0 0-4-4H5z"/>
-                            </svg>
-                        </a>
-                        <a class="nav-link text-white-50 " href="/">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-dash-square-fill" viewBox="0 0 16 16">
-                                <path d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2zm2.5 7.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1 0-1z"/>
-                            </svg>
-                        </a>
-                    </div>                    
+            {% comment %} <div class="sidebare sidebare-transform">
+                <a href="#about">About</a>
+                <a href="#services">Services</a>
+                <a href="#clients">Clients</a>
+                <a href="#contact">Contact</a>
+            </div> {% endcomment %}
+            <div class= "sidebare sidebare-transform" id="sidebare-id">
+                <div class=" container-fluid sidebare-content sidebare-content-transform" id="sidebare-content-id">
+                    <div class="row justify-content-center"> 
+                        <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-dash-square-fill" viewBox="0 0 16 16">
+                            <path d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2zm2.5 7.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1 0-1z"/>
+                        </svg>
+                        <div class="row justify-content-center mt-5">
+                            <a class="nav-link text-white-50 " href="/">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-app" viewBox="0 0 16 16">
+                                    <path d="M11 2a3 3 0 0 1 3 3v6a3 3 0 0 1-3 3H5a3 3 0 0 1-3-3V5a3 3 0 0 1 3-3h6zM5 1a4 4 0 0 0-4 4v6a4 4 0 0 0 4 4h6a4 4 0 0 0 4-4V5a4 4 0 0 0-4-4H5z"/>
+                                </svg>
+                            </a>
+                            <a class="nav-link text-white-50 " href="/">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-dash-square-fill" viewBox="0 0 16 16">
+                                    <path d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2zm2.5 7.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1 0-1z"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>                                        
                 </div>
-            </nav>
+            </div> 
             <div class="main">
                 <header class="navbar navbar-expand navbar-light navbar-bg">
-                    <a class="navbar-brand mr-0 mr-md-2 text-white-50 " href="/" aria-label="icon-text-left">
+                    <div class=" navbar-brand mr-0 mr-md-2 menue-button" id = "button-toggle-id">
                         <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-text-left" viewBox="0 0 16 16">
                             <path fill-rule="evenodd" d="M2 12.5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5z"/>
                         </svg>
-                    </a>
+                    </div>
 
                     <div class="navbar-nav-scroll nav_header">
                         <ul class="navbar-nav bd-navbar-nav flex-row">
@@ -125,7 +129,7 @@
                     {% block content-body %}
                     {% endblock content-body %}
                 </main>
-                <footer class="footer-content">
+                <footer class="footer-content sidebare-transform" id="footer-content-id">
                     <div class="navbar navbar-expand-lg"> 
                         <div class="collapse navbar-collapse justify-content-md-center text-muted">
                                 <p>
@@ -136,6 +140,8 @@
                 </footer>
             </div>
         </div>
+        <!-- own js -->
+        <script src=" {% static 'javascript/base.js' %}"></script>
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
