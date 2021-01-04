@@ -8,10 +8,8 @@ document.addEventListener("DOMContentLoaded", () =>{
     const footerContent = document.getElementById("footer-content-id")
 
     $("#button-toggle-id").click(function(){
-        $('.sidebare').toggleClass('sidebare-hidden');
-        $('.footer-content').toggleClass('footer-content-hidden');
-        $('.sidebare-content').toggleClass('sidebare-content-hidden');
-        
+        $('.sidebare').toggleClass('sidebare-hidden')
+        $('.footer-content').toggleClass('footer-content-hidden')        
     });
 
     btnToggled.addEventListener('click', (event) =>{
