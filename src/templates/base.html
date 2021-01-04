@@ -103,16 +103,23 @@
                 </header>
                 <main class= "main-content">
                     <div class="row justify-content-around">
-                        <div class="col-8 principal-view">
+                        <div class="col-md-8 principal-view">
                             <div class="row-cols-1 content-viewer">
-                                <p> video / statistic </p>
+                                
+                                {% block content-viewer %}
+                                    <p> video / statistic </p>
+                                {% endblock content-viewer %}
                             </div>
                             <div class="row-cols-1 content-commando">
+                            {% block content-consoleLog %}
                                 <p> comando</p>
+                            {% endblock content-consoleLog %}                                
                             </div>
                         </div>
-                        <div class= "col-4 justify-content-center content-info">
-                            <p> info </p>
+                        <div class= "col-md-4 justify-content-center content-info">
+                            {% block content-info %}
+                                <p> info </p>
+                            {% endblock content-info %}                            
                         </div>
                     </div>
                     {% block content-body %}
