@@ -63,31 +63,6 @@
     background: transparent; /* Chrome/Safari/Webkit */
 }
 
-
-#sidebare-btn-header-id {
-    padding: 10;
-    text-align: center;
-    color:#7e7d81;
-}
-
-#sidebare-btn-header-id:hover {
-    color:#938a8a;
-    cursor: pointer;
-}
-
-.sidebare-btn {
-    color:#7e7d81;
-}
-
-.sidebare-btn .activie {
-   color: #007bff;
-}
-
-.sidebare-btn:hover {
-    color:#e8be95;
-    cursor: pointer;
-}
-
 /* main grid content 2 columns for sidebar and main */
 .main-grid{
     width: 100%;
@@ -194,6 +169,10 @@
     border-top: 3px  #f6f8fb;
 }
 
+/* 
+    Button und button link
+ */
+
 #button-toggle-id {
     color:#7e7d81;
 }
@@ -202,6 +181,38 @@
     border-radius: 90px;
     background-color: #e8be95;
     cursor: pointer;
+}
+
+#sidebare-btn-header-id {
+    padding: 10;
+    text-align: center;
+    color:#7e7d81;
+}
+
+#sidebare-btn-header-id:hover {
+    color:#938a8a;
+    cursor: pointer;
+}
+
+.sidebare-btn {
+    color:#7e7d81;
+}
+
+.sidebare-btn .activie {
+   color: #007bff;
+}
+
+.sidebare-btn:hover {
+    color:#e8be95;
+    cursor: pointer;
+}
+
+.grid-nav a  {
+    color:#7e7d81;
+}
+
+.grid-nav a:hover  {
+    color: #e8be95;;
 }
 
 
