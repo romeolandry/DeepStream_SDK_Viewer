@@ -132,14 +132,22 @@
 
                                 </div>
                             </div>
-                            <div class = " container-viewer">                   
-                                <p> <h1> Viewer</h1> </p>
+                            <div class = " container-viewer"> 
+                                {% block content-viewer %}
+                                    <p> <h1> Viewer</h1> </p>
+                                {% endblock content-viewer  %}
                             </div>
-                            <div class = " container-setting">                   
-                                <p> <h1> setting </h1> </p>
+                            <div class = " container-setting">
+                                {% block content-setting %}
+                                    <p> <h1> setting </h1> </p>
+                                {% endblock content-setting %}                  
+                                
                             </div>
-                            <div class = " container-console">                                
-                                <p> <h1> console </h1> </p>
+                            <div class = " container-console"> 
+                                {% block content-console-log %}
+                                    <p> <h1> console </h1> </p>
+                                {% endblock content-console-log %}                              
+                                
                             </div>
                             <footer class="footer-content-hidden " id="footer-content-id">
                                 <nav class="navbar navbar-expand-lg navbar-light bg-light rounded">
