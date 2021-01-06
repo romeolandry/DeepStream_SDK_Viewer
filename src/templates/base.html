@@ -19,10 +19,8 @@
         <div class="wrapper" >
             <div class="main">
                 <div class="main-grid">
-                    <div class="sidebare-grid bg-white" >
-                        <div class = "sidebare-grid-content">
-                            
-                        
+                    <div class="sidebare-grid" >
+                        <div class = "sidebare-grid-content">                           
                             <div class = "sidebare sidebare-transform " id="sidebare-id">
                                 <div class="sidebare-content container-fluid" id="sidebare-content-id">
                                     <div class="sidebare-btn-header" id="sidebare-btn-header-id">
@@ -116,26 +114,22 @@
                                             </div>
 
                                         </div>
-                                    </div>            
+                                    </div> 
                                 </div>
                             </div>
-
-
-
-
                         </div>
                     </div>
-                    <div class="viewer-grid " >
-                        <div class = " viewer-grid-content ">
+                    <div class="viewer-grid ">
+                        <div class = " viewer-grid-content sidebare-transform" id="sidebare-content-id">
                             <div class = "grid-nav">
-                                <div class="navbar navbar-expand navbar-light navbar-bg">
-                                    <div class=" navbar-brand mr-0 mr-md-2 menue-button" id = "button-toggle-id">
+                                <div class="navbar navbar-expand bg-white  fixed-top">
+                                    <div class=" navbar-brand mr-0 mr-md-2" id = "button-toggle-id">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-text-left" viewBox="0 0 16 16">
                                             <path fill-rule="evenodd" d="M2 12.5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5z"/>
                                         </svg>
                                     </div>
 
-                                    <div class="navbar-nav-scroll nav_header">
+                                    {% comment %} <div class="navbar-nav-scroll nav_header">
                                         <ul class="navbar-nav bd-navbar-nav flex-row">
                                             <li class="nav-item">
                                                 <a class="nav-link navbar-menue-link  " href="/">Home</a>
@@ -147,7 +141,7 @@
                                                 <a class="nav-link navbar-menue-link  " href="/">Home</a>
                                             </li>
                                         </ul>
-                                    </div>
+                                    </div> {% endcomment %}
 
                                     <ul class="navbar-nav ml-md-auto colapse">
                                         <li class="nav-item dropdown">
@@ -192,17 +186,17 @@
 
                                 </div>
                             </div>
-                            <div class = " container-viewer bg-info">                   
+                            <div class = " container-viewer">                   
                                 <p> <h1> Viewer</h1> </p>
                             </div>
-                            <div class = " container-setting bg-warning text-dark">                   
+                            <div class = " container-setting">                   
                                 <p> <h1> setting </h1> </p>
                             </div>
-                            <div class = " container-console bg-danger text-dark">                                
+                            <div class = " container-console">                                
                                 <p> <h1> console </h1> </p>
                             </div>
                             <footer class="footer-content-hidden " id="footer-content-id">
-                                <nav class="navbar navbar-expand-lg navbar-light bg-light bg-dark rounded">
+                                <nav class="navbar navbar-expand-lg navbar-light bg-light rounded">
                                     <div class="collapse navbar-collapse justify-content-md-center">
                                         <p class="mb-0">
                                             © 2020 - <a class="navbar-brand text-justify" href="index.html" class="text-muted">Deepiewer</a>

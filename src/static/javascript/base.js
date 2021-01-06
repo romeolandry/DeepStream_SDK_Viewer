@@ -9,8 +9,10 @@ document.addEventListener("DOMContentLoaded", () =>{
 
     // toggeled side bar menu with JQuery
     $("#button-toggle-id").click(function(){
-        $('.sidebare').toggleClass('sidebare-hidden')
-        $('.footer-content').toggleClass('footer-content-hidden')        
+        $('.viewer-grid-content').toggleClass('viewer-grid-content-slided')
+        $('.sidebare').toggleClass('sidebare-hidden')        
+        // $('.footer-content').toggleClass('footer-content-hidden')
+        console.log("test")       
     });
 
     // hauptButton menue sidebare

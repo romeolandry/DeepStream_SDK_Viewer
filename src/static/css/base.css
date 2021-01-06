@@ -1,18 +1,28 @@
 .body {
     overflow-y: scroll;
     overflow-x: hidden;
+    background-color: #f7f9fc;
     opacity: 1 !important;
 }
 
 /* content all element of th page */
 .wrapper {
-    align-items: stretch;
-    display: flex;
-    width: 100%;
-    background-color: #f6f8fb; 
+    min-width: 100%;
+    min-height: 100%;
+    max-width: 100%;
+    max-height: 100%;
+    background-color: #f7f9fc; 
     margin-right: auto;
     margin-left: auto;
     box-sizing: unset;
+}
+
+.main .menue-button {
+    margin-left: 0;
+}
+
+.main .menue-button-hidden {
+    margin-left: 0;
 }
 
 .main .menue-button:hover {
@@ -23,20 +33,19 @@
 /* left sidebar menu */
 .sidebare {
     background-color: #ffffff;
-    min-width: 80px;
-    max-width: 100%;
-    min-height: 100%;
     max-height: 100%;
     position: fixed;
-    left: 0;
-    top: -2;
-    z-index: 1;
-    margin: 0;
-    bottom: -2;
-
     overflow:auto;
     scrollbar-width: none; /* Firefox */
     -ms-overflow-style: none;
+}
+
+.sidebare-hidden {
+    min-width: auto ;
+    max-width: 0px;
+    min-height: 100%;
+    max-height: 100%;
+    margin-left: 0;
 }
 
 .sidebare-content {
@@ -54,20 +63,6 @@
     background: transparent; /* Chrome/Safari/Webkit */
 }
 
-.sidebare-transform {
-    transition: all  2s ease-in-out;
-    -webkit-transition: all  2s ease-in-out;
-    -moz-transition: all  2s ease-in-out;
-    -ms-transition: all  2s ease-in-out;
-    -o-transition: all  2s ease-in-out;
-}
-
-.sidebare-hidden {
-    min-width: 0px;
-    max-width: 0px;
-    min-height: 100%;
-    max-height: 100%;
-}
 
 #sidebare-btn-header-id {
     padding: 10;
@@ -97,46 +92,20 @@
 .main-grid{
     width: 100%;
     max-width: 100%;
-    display: flex;
-    grid-gap:10px;
     background-color: #f6f8fb;
-
     min-height: 100%;
-    grid-template-rows: repeat(1, 1fr) ;
-    grid-template-columns: repeat(2, 1fr);
 
 }
 
 .main-grid .sidebare-grid {
-    display: flex;
     width: max-content;
-    grid-row: 1;
-    grid-column: 1;
 }
-
-.main-grid .viewer-grid{
-    display: flex;
-    grid-row: 1;
-    grid-column: 2;
-}
-
-/* content hearder menu bar viewew and footer  */
-/* .main {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    min-width: 100%;
-    max-width: 100%;
-    min-height: 100vh;
-    min-width: 0;
-    color: #040811;
-} */
 
 .viewer-grid .viewer-grid-content{
     display: inline-grid;
     height: 100%;
     width: 100%;   
-    margin-left: 200;
+    margin-left: 229;
     grid-template-rows: repeat(5, auto) ;
     grid-template-columns: repeat(4, auto);
     grid-gap:20px;
@@ -146,41 +115,35 @@
     padding-bottom: 0;
 }
 
-/* hidden narv */
-.viewer-grid .viewer-grid-content .grid-nav{
-    background-color: #ffffff;
-    justify-content: center;
-    position: flex;
-    /* right: 0; */
-    /* left: 80px; */
-    top: 0;
-    margin-left: max-content;
-    max-height: 70;
-    grid-row: 1;
-    grid-column: 1 /span 4;
+.viewer-grid .viewer-grid-content-slided{
+    display: inline-grid;
+    height: 100%;
+    width: 100%;   
+    margin-left: 0;
+    grid-template-rows: repeat(5, auto) ;
+    grid-template-columns: repeat(4, auto);
+    grid-gap:20px;
+    padding-top: 0;
+    padding-left: 10;
+    padding-right: 0;
+    padding-bottom: 0;
 }
 
 
 .viewer-grid .viewer-grid-content .container-viewer{
-    /* margin-right: -30;
-    margin-left: 300;
-    height: max-content;
-    width: 50%;
-    margin: 50; */
-    float: right;    
+    background-color: #17a2b8;  
     grid-row: 2 /span 3;
     grid-column: 1 / span 3;
 }
 
 .viewer-grid .viewer-grid-content .container-setting{
-    width: 100%;
-    height: 100%;
+    background-color: #ffc107;
     grid-row: 2 /span 3;
     grid-column: 4;
 }
 
 .viewer-grid .viewer-grid-content .container-console{
-    color: rgb(247, 239, 239);
+    background-color: #dc3545 ;
     grid-row: 5;
     grid-column: 1 /span 3;
 }
@@ -231,17 +194,30 @@
     border-top: 3px  #f6f8fb;
 }
 
-/* .main header{
-    background-color: transparent;
-    padding: 0;
-} */
+#button-toggle-id {
+    color:#7e7d81;
+}
 
-/* .main .main-content {
-    background-color: transparent;
-    padding-left: 10;
-    color: #7e7d81;
+#button-toggle-id:hover {
+    border-radius: 90px;
+    background-color: #e8be95;
+    cursor: pointer;
+}
 
-} */
+
+/* 
+    -------------------------------------------------------------------------
+    Css transformation
+    ________________________________________________________________________
+*/
+
+.sidebare-transform {
+    transition: all  .035s ease-in-out;
+    -webkit-transition: all  .035s ease-in-out;
+    -moz-transition: all  .035s ease-in-out;
+    -ms-transition: all  .035s ease-in-out;
+    -o-transition: all  .035s ease-in-out;
+}
 
 /* 
     -------------------------------------------------------------------------
