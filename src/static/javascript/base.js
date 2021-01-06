@@ -8,6 +8,9 @@ document.addEventListener("DOMContentLoaded", () => {
         $('.sidebare').toggleClass('sidebare-hidden')
     });
 
+    const footerHear = document.getElementById('footer-jahre-id')
+    footerHear.innerHTML = new Date().getFullYear();
+
     // content of sidebar
     const sideContentItems = document.getElementsByClassName("side-items")
     const sideBtnItems = document.querySelectorAll('.side-items .sidebare-btn-content .sidebare-btn-item')
