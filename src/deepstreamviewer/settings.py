@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'channels',
     # my own apps
     'Dashboard',
 ]
@@ -72,6 +73,7 @@ TEMPLATES = [
 ]
 
 WSGI_APPLICATION = 'deepstreamviewer.wsgi.application'
+ASGI_APPLICATION = 'deepstreamviewer.asgi.application' # asynchronous to to define application variable into asgi.py
 
 
 # Database
