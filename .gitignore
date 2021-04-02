@@ -145,4 +145,6 @@ dmypy.json
 .history
 
 # sftp configuration file 
-sftp-config.json 
+sftp-config.json
+
+iot_app.code-worksapce
