@@ -5,8 +5,9 @@
 {% endblock content-viewer %}
 
 {% block content-console-log %}
-    <p> console log from server</p>
-    {{request.}}
+    {% for msg in topic %}
+        {{msg}}
+    {% endfor %}
 {% endblock content-console-log %}
 
 {% block content-setting  %}
