@@ -1,14 +1,16 @@
-from channels.generic.websocket import WebsocketConsumer
+import json
 
 from kafka import  KafkaConsumer
-import json
-import time
+from asyncio import sleep
+#from time import sleep
 
-class KafkaConsummerGraph(WebsocketConsumer):
+# from channels.generic.websocket import WebsocketConsumer
+from channels.generic.websocket import AsyncWebsocketConsumer
+class KafkaConsummerGraph(AsyncWebsocketConsumer):
     # overide connected method
     # to accept all connection that come from the browser
-    def connect(self):
-        self.accept()
+    async def connect(self):
+        await self.accept()
 
         # Consume Kafka message from consummer
         consumer = KafkaConsumer(
@@ -23,8 +25,8 @@ class KafkaConsummerGraph(WebsocketConsumer):
             # skip oder key and just Object keys.
             # it content the tracked object
             trackObject = json_msg['object']
-            self.send(json.dumps(trackObject))
-            time.sleep(10)
+            await self.send(json.dumps(trackObject))
+            await sleep(10)
 
     
     
