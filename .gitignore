@@ -147,7 +147,7 @@ dmypy.json
 # sftp configuration file 
 sftp-config.json
 
-iot_app.code-worksapce
+*.code-worksapce
 
 # redis file
 *.rdb
