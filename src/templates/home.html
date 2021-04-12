@@ -1,7 +1,15 @@
 {% extends "base.html" %}
 
 {% block content-viewer %}
-    <h1>{{request.user}}</h1>
+    <div class="container">
+        <div class="row">
+            <div class="col-10 mx-auto mt-5">
+                <canvas id="myChart"></canvas>
+            </div>
+            
+        </div>
+    </div>
+    
 {% endblock content-viewer %}
 
 {% block content-console-log %}
