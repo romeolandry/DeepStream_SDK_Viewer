@@ -2,6 +2,7 @@ import json
 
 from kafka import  KafkaConsumer
 from asyncio import sleep
+from decouple import config
 #from time import sleep
 
 # from channels.generic.websocket import WebsocketConsumer
@@ -15,8 +16,8 @@ class KafkaConsummerGraph(AsyncWebsocketConsumer):
         # Consume Kafka message from consummer
         consumer = KafkaConsumer(
             "jetson-topic",
-            bootstrap_servers=['192.168.0.2:9092'],
-            auto_offset_reset = 'earliest',
+            bootstrap_servers=[config("BOOTSTRAP_SERVERS")],
+            auto_offset_reset = config("AUTO_OFFSET_RESET"),
             )
         
         for msg in consumer:
