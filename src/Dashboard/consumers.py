@@ -16,7 +16,7 @@ class KafkaConsummerGraph(AsyncWebsocketConsumer):
         consumer = KafkaConsumer(
             "jetson-topic",
             bootstrap_servers=['192.168.0.2:9092'],
-            auto_offset_reset = 'latest',
+            auto_offset_reset = 'earliest',
             )
         
         for msg in consumer:
@@ -26,7 +26,7 @@ class KafkaConsummerGraph(AsyncWebsocketConsumer):
             # it content the tracked object
             trackObject = json_msg['object']
             await self.send(json.dumps(trackObject))
-            await sleep(10)
+            await sleep(1)
 
     
     
